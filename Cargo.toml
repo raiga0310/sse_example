@@ -1,0 +1,22 @@
+[package]
+name = "sse_example"
+version = "0.1.0"
+authors = ["raiga0310 <raiga0310brilio@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+axum = "0.6.19"
+futures = "0.3.17"
+tokio = { version = "1.14.0", features = ["full"] }
+tokio-stream = "0.1.6"
+hyper = "0.14.14"
+http = "0.2.4"
+once_cell = "1.8.0"
+tower = "0.4.12"
+tower-http = { version = "0.4.1", features = ["full"] }
+
+
+[[bin]]
+
+name = "sse_client"
+path = "src/client.rs"
